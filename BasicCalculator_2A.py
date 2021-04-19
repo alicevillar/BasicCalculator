@@ -46,7 +46,7 @@ def subtraction():
     # Displaying the answer:
     print(f"The subtraction of {numbers} is equal to {operation_subtraction}")
     # Inserting the answer inside the history list:
-    sentence = "A subtraction entre " + str(numbers) + " vale: " + str(operation_subtraction) + "\n" + str(
+    sentence = "A subtraction of " + str(numbers) + " is equal to: " + str(operation_subtraction) + "\n" + str(
         datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
     history.append(sentence)
 
@@ -69,9 +69,9 @@ def division():
         operation_multiplication = operation_division * n
 
     # Displaying the answer:
-    print(f"The multiplication of {numbers} is equal to {operation_division}")
+    print(f"The division of {numbers} is equal to {operation_division}")
     # Inserting the answer inside the history list:
-    sentence = "The multiplication of " + str(numbers) + " is equal to: " + str(
+    sentence = "The division of " + str(numbers) + " is equal to: " + str(
         operation_division) + "\n" + str(
         datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
     history.append(sentence)
