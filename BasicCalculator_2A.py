@@ -27,6 +27,7 @@ def add():
     #Inserting the answer inside the history list:
     sentence = "The sum of " + str(numbers) + " is equal to: " + str(operation_add) + "\n" + str(
         datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
+
     history.append(sentence)
 
 #Function to subtract multiple numbers
@@ -53,20 +54,27 @@ def subtraction():
 def division():
     operation_division = 1
     numbers = []
-    a = float(input("Type a number: "))
-    b = float(input ("Type another number: "))
+    user_input = input("Enter a number:")
 
-    # This while loop will happen if the user enters 0 as the denominator
-    while b == 0:
-        print("WARNING: Invalid Equation! Try again!")
-        b = float(input("Enter another number: "))
+    # This while loop will happen until the user enter an empty string (by pressing "enter")
+    while user_input != "" or len(numbers) < 2:
+        if user_input != "":
+            numbers.append(float(user_input))
+        else:
+            print("Invalid operation!")
+        user_input = input("Enter another number or click enter:")
 
-    operation_division = a / b
-    print(f"A division between {a} and {b} is {operation_division}")
+    # This for loop repeats the addition operation
+    for n in numbers:
+        operation_multiplication = operation_division * n
 
+    # Displaying the answer:
+    print(f"The multiplication of {numbers} is equal to {operation_division}")
     # Inserting the answer inside the history list:
-    sentenca = "The division  " + str(a) + " e " + str(b) + " vale: " + str(operation_division)
-    history.append(sentenca)
+    sentence = "The multiplication of " + str(numbers) + " is equal to: " + str(
+        operation_division) + "\n" + str(
+        datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
+    history.append(sentence)
 
 #Function to multiply multiple numbers
 def multiplication():
@@ -82,7 +90,7 @@ def multiplication():
             print("Invalid operation!")
         user_input = input("Enter another number or click enter:")
 
-    #This for loop repeats the addition operation
+    #This for loop repeats the multiplication operation
     for n in numbers:
         operation_multiplication = operation_multiplication * n
 
