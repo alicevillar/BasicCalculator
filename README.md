@@ -21,9 +21,8 @@ This is an upgraded version with the possibility to perform basic arithmetic ope
 - possibility to make operations with multiple numbers. 
 - history of previous calculations with date and time 
 
-## Final version approach
 
-*  User chooses the desired operation: 
+*  Approach: User chooses the desired operation: 
     1 - Addition
     2 - Subtraction
     3 - Multiplication
@@ -32,3 +31,9 @@ This is an upgraded version with the possibility to perform basic arithmetic ope
     6 - Terminate
 *  Two numbers or more are taken from user
   
+### BasicCalculator_2B.py
+
+This version in a calculator in Python using Tkinter. 
+
+![print](BasicCalculator.PNG)
+
