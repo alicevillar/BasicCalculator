@@ -35,5 +35,5 @@ This is an upgraded version with the possibility to perform basic arithmetic ope
 
 This version in a calculator in Python using Tkinter. 
 
-![print](BasicClaculator.PNG)
+![print](BasicCalculator.PNG)
 
