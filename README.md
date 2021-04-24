@@ -3,39 +3,43 @@
 This is a personal project constaining four versions of a basic calculator. It aims to present different approaches to perform the four basic arithmetic operations: addition, subtraction, multiplication and division, depending upon the user input. Next, I describe each version. 
 
 
-## BasicCalculator Version 1A.py
+## VERSION 1 -> BasicCalculator 1A.py
 
-* Features:
-- User chooses the desired operation. Only two numbers are taken from user for the four basic arithmetic operations.
-- basic arithmetic operations of addition, subtraction, multiplication, and division of two numbers that user inputs.
-- history of previous calculations.
+In this versions, user is asked to choose the desired operation and only two numbers are taken to perform the four basic arithmetic operations. User can also choose to see the history of previous calculations.
 
-## BasicCalculator Version 1B.py 
+### Approach:
 
-This is the refactored version of BasicCalculator 1A.   
+#####   Part 1: Functions
+    1 -  Function to add two numbers
+    2 -  Function to subtract two numbers
+    3 -  Function to divide two numbers
+    4 -  Function to multiply two numbers
+    5 -  Function to store results and see previous calculations
 
-## BasicCalculator Version 2A.py 
+ #####   Part 2: Interacting with user
+    1 -  Infinite loop which will end with the break statement
+    2 -  Taking input from user 
 
-This is an upgraded version with the possibility to perform basic arithmetic operations with multiple numbers. 
+## VERSION 2 -> BasicCalculator 1B.py 
 
-* Features: 
-- basic arithmetic operations of addition, subtraction, multiplication, and division of two numbers that user inputs.
-- possibility to make operations with multiple numbers. 
-- history of previous calculations with date and time 
+This is the refactored version of Basic Calculator 1A.   
 
+## VERSION 3 -> BasicCalculator Version 2A.py 
+
+This is an upgraded version with two new features: a) possibility to perform basic arithmetic operations with multiple numbers; b) history of previous calculations with date and time.
   
-## BasicCalculator_2B.py
+## VERSION 3 -> BasicCalculator 2B.py
 
 This last version in a calculator in Python using Tkinter to build an interface. The code is divided in two parts: 
 
 
-###   Part 1: Functions
+####   Part 1: Functions
     1 -  Update mathematical expressions when user presses a button
     2 -  Evaluate the final expression using Try/Except for error handling
     3 -  Clear up the content in the Text Box
 
 
-###   Part 2: Driver code 
+####   Part 2: Driver code 
     1 - Creating GUI window and setting configuration
     2 - Instanciating class StringVar to construct a string variable
     3 - Creating an entry box to show the mathematical expressions
@@ -45,6 +49,7 @@ This last version in a calculator in Python using Tkinter to build an interface.
     7 - Starting GUI with a main loop
 
 
+#### Demo
 
 ![print](BasicCalculator.PNG)
 
