@@ -3,7 +3,7 @@
 This is a personal project constaining four versions of a basic calculator. It aims to present different approaches to perform the four basic arithmetic operations: addition, subtraction, multiplication and division, depending upon the user input. Next, I describe each version. 
 
 
-## VERSION 1 -> BasicCalculator 1A.py
+## VERSION 1 -> Basic Calculator 1A.py
 
 In this versions, user is asked to choose the desired operation and only two numbers are taken to perform the four basic arithmetic operations. User can also choose to see the history of previous calculations.
 
@@ -20,15 +20,15 @@ In this versions, user is asked to choose the desired operation and only two num
     1 -  Infinite loop which will end with the break statement
     2 -  Taking input from user 
 
-## VERSION 2 -> BasicCalculator 1B.py 
+## VERSION 2 -> Basic Calculator 1B.py 
 
 This is the refactored version of Basic Calculator 1A.   
 
-## VERSION 3 -> BasicCalculator Version 2A.py 
+## VERSION 3 -> Basic Calculator Version 2A.py 
 
 This is an upgraded version with two new features: a) possibility to perform basic arithmetic operations with multiple numbers; b) history of previous calculations with date and time.
   
-## VERSION 3 -> BasicCalculator 2B.py
+## VERSION 3 -> Basic Calculator 2B.py
 
 This last version in a calculator in Python using Tkinter to build an interface. The code is divided in two parts: 
 
