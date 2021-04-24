@@ -9,6 +9,8 @@ In this versions, user is asked to choose the desired operation and only two num
 
 ### Approach:
 
+The code is divided in two parts: 
+
 #####   Part 1: Functions
     1 -  Function to add two numbers
     2 -  Function to subtract two numbers
@@ -32,6 +34,9 @@ This is an upgraded version with two new features: a) possibility to perform bas
 
 This last version in a calculator in Python using Tkinter to build an interface. The code is divided in two parts: 
 
+### Approach:
+
+The code is divided in two parts:
 
 ####   Part 1: Functions
     1 -  Update mathematical expressions when user presses a button
