@@ -1,4 +1,5 @@
 
+import datetime
 
 ###############################################################################
 #
@@ -6,20 +7,19 @@
 #
 ###############################################################################
 
-import datetime
 history = []
 
-#Function to sum multiple numbers
+#Function to add multiple numbers
 def add():
     operation_add = 0
     numbers = []
     user_input = input("Enter a number:")
 
-    #This while loop will happen until the user enter an empty string (by pressing "enter")
+    #This While Loop will happen until the user enters an empty string (by pressing "enter")
     while user_input != "":
         numbers.append(float(user_input))
         user_input = input("Enter another number:")
-    #This for loop repeats the addition operation
+    #This For Loop repeats the addition operation
     for n in numbers:
         operation_add = operation_add + n
     #Displaying the answer:
@@ -36,11 +36,11 @@ def subtraction():
     numbers = []
     user_input = input("Enter a number:")
 
-    # This while loop will happen until the user enter an empty string (by pressing "enter")
+    # This While Loop will continue until the user enters an empty string (by pressing "enter")
     while user_input != "":
         numbers.append(float(user_input))
         user_input = input("Enter another number:")
-    # This for loop repeats the subtraction operation
+    # This For Loop repeats the subtraction operation
     for n in numbers:
         operation_subtraction = operation_subtraction - n
     # Displaying the answer:
@@ -56,7 +56,7 @@ def division():
     numbers = []
     user_input = input("Enter a number:")
 
-    # This while loop will happen until the user enter an empty string (by pressing "enter")
+    # This While Loop will happen until the user enters an empty string (by pressing "enter")
     while user_input != "" or len(numbers) < 2:
         if user_input != "":
             numbers.append(float(user_input))
@@ -64,13 +64,13 @@ def division():
             print("Invalid operation!")
         user_input = input("Enter another number or click enter:")
 
-    # This for loop repeats the addition operation
+    # This For Loop repeats the division operation
     for n in numbers:
-        operation_multiplication = operation_division * n
+        operation_division = operation_division * n
 
-    # Displaying the answer:
+    # Displaying the answer
     print(f"The division of {numbers} is equal to {operation_division}")
-    # Inserting the answer inside the history list:
+    # Inserting the answer inside the history list
     sentence = "The division of " + str(numbers) + " is equal to: " + str(
         operation_division) + "\n" + str(
         datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
@@ -82,33 +82,33 @@ def multiplication():
     numbers = []
     user_input = input("Enter a number:")
 
-    # This while loop will happen until the user enter an empty string (by pressing "enter")
+    # This While Loop will happen until the user enters an empty string (by pressing "enter")
     while user_input != "" or len(numbers)<2:
         if user_input != "":
             numbers.append(float(user_input))
         else:
-            print("Invalid operation!")
+            print("Invalid operation")
         user_input = input("Enter another number or click enter:")
 
-    #This for loop repeats the multiplication operation
+    #This For Loop repeats the multiplication operation
     for n in numbers:
         operation_multiplication = operation_multiplication * n
 
-    #Displaying the answer:
+    #Displaying the answer
     print(f"The multiplication of {numbers} is equal to {operation_multiplication}")
     #Inserting the answer inside the history list:
     sentence = "The multiplication of " + str(numbers) + " is equal to: " + str(operation_multiplication) + "\n" + str(
         datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
     history.append(sentence)
 
-#Function to show your previous calculations:
+#Function to show user's previous calculations
 def previous_calculations():
     for line in history:
         print("\n", line)
 
 ###############################################################################
 #
-#   PART 1: Interacting with user
+#   PART 2: Interacting with user
 #
 ###############################################################################
 
@@ -124,7 +124,7 @@ while True:
     5 - History
     6 - Terminate
     """)
-    # User chooses the operation:
+    # User selects the operation
     click = int(input("Select an option: "))
 
     if click == 1:
@@ -140,7 +140,7 @@ while True:
     elif click == 6:
         break
     else:
-        print("Invalid option! Please try again :-)")
+        print("Invalid option. Please try again :-)")
 
 
 
