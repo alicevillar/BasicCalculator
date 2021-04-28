@@ -1,4 +1,3 @@
-#PS: mathematical equation is a variable that in the first function that has not appeared before
 from tkinter import *
 
 #declaring global variable called mathematical expressions with an empty string
@@ -6,34 +5,34 @@ mathematical_expression= ""
 
 ###############################################################################
 #
-#   FUNCTIONS
+#   PART 1 - FUNCTIONS
 #   1 -  Update mathematical expressions when user presses a button
 #   2 -  Evaluate the final expression using Try/Except for error handling
-#   3 -  Clear up the content in the Text Box
+#   3 -  Clear up the content in the text box
 #
 ###############################################################################
 
 #Function to update mathematical expressions
 def updating_mathematical_expressions(number):
-    global mathematical_expression #bringing the global variale to be used inside the function
+    global mathematical_expression #bringing the global variable so it can be used inside the function
     mathematical_expression= mathematical_expression + str(number) #string concatenation
     mathematical_equation.set(mathematical_expression) #using set method to set the value of the string
 
 #Function to evaluate the final expression using Try/Except for error handling
 def evaluating_mathematical_expressions():
-    global mathematical_expression #bringing the global variable to be used inside the function
+    global mathematical_expression #bringing the global variable so it can be used inside the function
     try:
-        total=str(eval(mathematical_expression)) #takes the mathematical expression, evaluates it and converts it into a string
+        total=str(eval(mathematical_expression)) #takes the expression, evaluates it and converts it to a string
         mathematical_equation.set(total) #shows the mathematical expression on the box
         mathematical_expression= "" #resets mathematical expression
 
-    except: # If an error happens then the except block will handle it
+    except: # If an error happens, then the except block will handle it
         mathematical_equation.set("Error")
         mathematical_expression="" #resets mathematical expression
 
 #Function to clear up the content in the Text Box
 def clearing_text_box():
-    global mathematical_expression #bringing the global variable to be used inside the function
+    global mathematical_expression #bringing the global variable so it can be used inside the function
     mathematical_expression="" #resets mathematical expression
     mathematical_equation.set("") #deleting content from Text Box
 
@@ -45,47 +44,41 @@ def clearing_text_box():
 #   2 - Instanciating class StringVar to construct a string variable
 #   3 - Creating an entry box to show the mathematical expressions
 #   4 - Expression_box.grid (columnspan=4, ipadx=70)
-#   5 - Placing widgets at respective positions in table like structure
+#   5 - Placing widgets at respective positions in table-like structure
 #   6 - Creating buttons and defining their positions in the window
 #   7 - Starting GUI with a main loop
 #
 ###############################################################################
 
-#def feedback():
-    #reply=message.askquestion('Was your experience good ?')
-    #if ans=='yes':
-        #tmsg.showinfo('Feedback','Please Rate us on PlayStore')
-    #else:
-        #tmsg.showinfo('Feedback','We will contact you soon to know about your bad experience')
 
 if __name__ == "__main__":
     # creating GUI window
     gui = Tk()
-    # setting the background colour
+    # Setting background colour
     gui.configure(background="pink")
 
-    # set the title
+    # Set the title
     gui.title("Basic Calculator")
 
-    # set the configuration
+    # Set the configuration
     gui.geometry("340x250")
 
-    #Windows pad
+    # Windows pad
     gui.config(padx=40,pady=40)
 
-    #Preenting user from resinzing the window
+    # Preventing user from resizing the window
     gui.resizable(False,False)
 
-    # instanciating class StringVar to construct a string variable
+    # Instanciating class StringVar to construct a string variable
     mathematical_equation = StringVar()
 
     # Creating an entry box to show the mathematical expressions
     expression_box=Entry(gui,textvariable=mathematical_equation)
 
-    # The method grid will be used for placing widgets at respective positions in table like structure
+    # The method grid will be used for placing widgets at respective positions in table-like structure
     expression_box.grid( columnspan=6, ipadx=56)
 
-    # Create buttons and defining their positions in the window
+    # Creating buttons and defining their positions in the window
 
     button1 = Button(gui, text=' 1 ', font="lucida 8 bold", fg='black', bg='white',
                      command=lambda: updating_mathematical_expressions(1), height=1, width=7)
@@ -155,7 +148,6 @@ if __name__ == "__main__":
                      command=lambda: updating_mathematical_expressions('.'), height=1, width=7)
 
     decimal.grid(row=5, column=1)
-
 
 
     # starting GUI with a main loop, which will only break when the user closes the window
