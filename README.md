@@ -5,7 +5,7 @@ This is a personal project constaining four versions of a basic calculator. It a
 
 ## VERSION 1 -> BasicCalculator_1A.py
 
-In this versions, user is asked to choose the desired operation and only two numbers are taken to perform the four basic arithmetic operations. User can also choose to see the history of previous calculations.
+In this version, user is asked to choose the desired operation and only two numbers are taken to perform the four basic arithmetic operations. User can also choose to see the history of previous calculations.
 
 ### Approach:
 
@@ -30,9 +30,9 @@ This is the refactored version of Basic Calculator 1A.
 
 This is an upgraded version with two new features: a) possibility to perform basic arithmetic operations with multiple numbers; b) history of previous calculations with date and time.
   
-## VERSION 3 -> BasicCalculator_2B.py
+## VERSION 4 -> BasicCalculator_2B.py
 
-This last version in a calculator in Python using Tkinter to build an interface. The code is divided in two parts: 
+This latest version is a calculator in Python using Tkinter to build an interface.  
  
 ### Approach:
 
@@ -49,7 +49,7 @@ The code is divided in two parts:
     2 - Instanciating class StringVar to construct a string variable
     3 - Creating an entry box to show the mathematical expressions
     4 - Expression_box.grid (columnspan=4, ipadx=70)
-    5 - Placing widgets at respective positions in table like structure
+    5 - Placing widgets at respective positions in table-like structure
     6 - Creating buttons and defining their positions in the window
     7 - Starting GUI with a main loop
 
