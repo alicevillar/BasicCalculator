@@ -1,11 +1,10 @@
-
 ###############################################################################
 #
 #   PART 1: Creating functions
 #
 ###############################################################################
 
-hystory =[]
+history =[]
 
 # Function to add two numbers
 def addition():
@@ -14,8 +13,8 @@ def addition():
     print("addition: " , a +b)
     operation_addition =a + b
 
-    global hystory
-    hystory.append(operation_addition)
+    global history
+    history.append(operation_addition)
 
 # Function to subtract two numbers
 def subtraction():
@@ -24,8 +23,8 @@ def subtraction():
     print("Subtraction: ", a - b)
     operation_addition = a - b
 
-    global hystory
-    hystory.append(operation_addition)
+    global history
+    history.append(operation_addition)
 
 # Function to divide two numbers
 def division():
@@ -37,8 +36,8 @@ def division():
     print("division: ", a / b)
     operation_division = a / b
 
-    global hystory
-    hystory.append(operation_division)
+    global history
+    history.append(operation_division)
 
 # Function to multiply two numbers
 def multiplication():
@@ -47,12 +46,12 @@ def multiplication():
     print("multiplication: ", a * b)
     operation_multiplication = a * b
 
-    global hystory
-    hystory.append(operation_multiplication)
+    global history
+    history.append(operation_multiplication)
 
-# storing results to see previous calculations
+# Storing results to see previous calculations
 def showing_previous_calculations():
-    print(hystory)
+    print(history)
 
 
 ###############################################################################
@@ -91,7 +90,3 @@ while True:
         break  # break statement to stop a while loop
     else:
         print("Invalid option")
-
-
-
-
