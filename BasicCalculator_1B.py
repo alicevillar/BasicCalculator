@@ -38,7 +38,7 @@ def multiplication(x,y):
     print("Multiplication: ", x*y)
     return operation_multiplication
 
-# storing results to see previous calculations
+# Storing results to see previous calculations
 def history(calculations):
     print(calculations)
 
