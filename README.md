@@ -58,3 +58,4 @@ The code is divided in two parts:
 
 ![print](BasicCalculator.PNG)
 
+To build this GUI (Graphical User Interface), I used a tutoria from Greeksfor Greeks (https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/), but build a totally different interface. In my model 
