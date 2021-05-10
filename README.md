@@ -58,14 +58,16 @@ The code is divided in two parts:
 
 ![print](BasicCalculator.PNG)
 
-To build this GUI (Graphical User Interface), I used a tutorial from Greeksfor Greeks (https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/), but I built a totally different interface. The tutorial had two problematic issues: 1) it shows the buttons spreed apart, and 2) shows one button left in the end, out of the grid.  
+To build this GUI (Graphical User Interface), I used a tutorial from Greeksfor Greeks [1], but I built a totally different interface. The tutorial had two problematic issues: 1) it shows the buttons spreed apart, and 2) shows one button left in the end, out of the grid.  
 
-Unlike the tutorial, my model shows the buttons with no space in between. The solution for the second issue was the sticky option appplyed to the "clear" buttom (sticky="we"), specifying which edges of the cell the widget should be "stuck" to. Specifying two opposite edges, such as we (west, east) means that the widget will be stretched. In this case, it will be stuck to both the left and right edge of the cell. So the widget becomes wider than its original size. For this, I used an article called "The Grid Geometry Manager" (https://tkdocs.com/tutorial/grid.html) 
+Unlike the tutorial, my model shows the buttons with no space in between. The solution for the second issue was the sticky option appplyed to the "clear" buttom (sticky="we"), specifying which edges of the cell the widget should be "stuck" to. Specifying two opposite edges, such as we (west, east) means that the widget will be stretched. In this case, it will be stuck to both the left and right edge of the cell. So the widget becomes wider than its original size. For this, I used an article called "The Grid Geometry Manager" [2].
 
  
 
 #### Resources
 
-TkDocs.The Grid Geometry Manager. Avalable from: https://tkdocs.com/tutorial/grid.html
+[1] GeeksforGeeks. (2021) Python | Simple GUI calculator using Tkinter. Available from: https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/
 
-GeeksforGeeks. (2021) Python | Simple GUI calculator using Tkinter. Available from: https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/
+[2] TkDocs.The Grid Geometry Manager. Avalable from: https://tkdocs.com/tutorial/grid.html
+
+ 
