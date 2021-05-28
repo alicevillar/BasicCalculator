@@ -1,6 +1,6 @@
 # Basic Calculator in four versions 
 
-This is a personal project containing four versions of a basic calculator. It aims to present different approaches to perform the four basic arithmetic operations: addition, subtraction, multiplication and division, depending upon the user input.  
+This is a personal small project containing four versions of a basic calculator. It aims to present different approaches to perform the four basic arithmetic operations: addition, subtraction, multiplication and division, depending upon the user input.  
 
 
 ## VERSION 1 -> BasicCalculator_1A.py
