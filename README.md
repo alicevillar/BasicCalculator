@@ -2,7 +2,7 @@
 
 This is a personal small project containing four versions of a basic calculator. It aims to present different approaches to perform the four basic arithmetic operations: addition, subtraction, multiplication and division, depending upon the user input.  
 
-As my first project, this calculator program has been a great opportunity to develop coding skills. Building four versions for a calculator helped me bring together everything I was learning and understand coding concepts better. My approach was to start small with a simple version of a calculator and then add more functionality later.
+As my first project, this calculator program has been a great opportunity to develop coding skills. Building four versions for a calculator helped me bring together everything I was learning and understand coding concepts better. My approach was to start small with a simple version of a calculator and then gradually add more functionality later. 
  
 ## VERSION 1 -> BasicCalculator_1A.py
 
