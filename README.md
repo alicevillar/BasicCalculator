@@ -4,11 +4,11 @@ This is a personal small project containing four versions of a basic calculator.
 
 As my first project, this calculator program has been a great opportunity to develop coding skills. Building four versions for a calculator helped me bring together everything I was learning and understand coding concepts better. My approach was to start small with a simple version of a calculator and then gradually add more functionality later. 
  
-## VERSION 1 -> BasicCalculator_1A.py
+### VERSION 1 -> [BasicCalculator_1A.py](https://github.com/alicevillar/basic-calculator/blob/main/BasicCalculator_1A.py)
 
 In this version, user is asked to choose the desired operation and only two numbers are taken to perform the four basic arithmetic operations. User can also choose to see the history of previous calculations.
 
-### Approach:
+#### Approach:
 
 The code is divided in two parts: 
 
@@ -23,29 +23,29 @@ The code is divided in two parts:
     1 -  Infinite loop which will end with the break statement
     2 -  Taking input from user 
 
-## VERSION 2 -> BasicCalculator_1B.py 
+### VERSION 2 -> [BasicCalculator_1B.py](https://github.com/alicevillar/basic-calculator/blob/main/BasicCalculator_1B.py)
 
 This is the refactored version of Basic Calculator 1A.   
 
-## VERSION 3 -> BasicCalculator_2A.py 
+### VERSION 3 -> [BasicCalculator_2A.py](https://github.com/alicevillar/basic-calculator/blob/main/BasicCalculator_2A.py)
 
 This is an upgraded version with two new features: a) possibility to perform basic arithmetic operations with multiple numbers; b) history of previous calculations with date and time.
   
-## VERSION 4 -> BasicCalculator_2B.py
+### VERSION 4 -> [BasicCalculator_2B.py](https://github.com/alicevillar/basic-calculator/blob/main/BasicCalculator_2B.py)
 
 This latest version is a calculator in Python using Tkinter to build an interface.  
  
-### Approach:
+#### Approach:
 
 The code is divided in two parts:
 
-####   Part 1: Functions
+#####   Part 1: Functions
     1 -  Update mathematical expressions when user presses a button
     2 -  Evaluate the final expression using Try/Except for error handling
     3 -  Clear up the content in the Text Box
 
 
-####   Part 2: Driver code 
+#####   Part 2: Driver code 
     1 - Creating GUI window and setting configuration
     2 - Instanciating class StringVar to construct a string variable
     3 - Creating an entry box to show the mathematical expressions
